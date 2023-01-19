@@ -1,4 +1,4 @@
-# These are all the trip variables
+
 
 import random
 
@@ -12,7 +12,7 @@ restaurants_list_chicago = ["Giordanos","Lou Malnatis","Gibsons Bar & Steakhouse
 
 restaurants_list_los_angeles = ["Bottega Louie","Musso and Frank Grill","Providence","Bestia"]
 
-transportation_list = ["Train","Car","Walk","Bike"]
+transportation_list = ["Train","Car","Walking","Bike"]
 
 entertainment_list_chicago = ["Millennium Park","Museum of Contemporary Art","Grant Park","Promontory Point"]
 
@@ -55,19 +55,19 @@ user_input = ""
 
 if destination == "Chicago":
     while user_input != "y":
-        entertainment = random.choice(restaurants_list_chicago)
+        entertainment = random.choice(entertainment_list_chicago)  
         user_input = input(f"Your entertainment is {(entertainment)}. Does this sound good? y/n")
 elif destination == "New York City":
     while user_input != "y":
-        entertainment = random.choice(restaurants_list_new_york)
+        entertainment = random.choice(entertainment_list_new_york)
         user_input = input(f"Your entertainment is {(entertainment)}. Does this sound good? y/n")
 elif destination == "Orlando":
     while user_input != "y":
-        entertainment = random.choice(restaurants_list_orlando)
+        entertainment = random.choice(entertainment_list_orlando)
         user_input = input(f"Your entertainment is {(entertainment)}. Does this sound good? y/n")
 elif destination == "Los Angeles":
     while user_input != "y":
-        entertainment = random.choice(restaurants_list_los_angeles)
+        entertainment = random.choice(entertainment_list_los_angeles)
         user_input = input(f"Your entertainment is {(entertainment)}. Does this sound good? y/n")
  
 user_input = ""
@@ -76,5 +76,8 @@ while user_input != "y":
     transportation = random.choice(transportation_list)
     user_input = input(f"Your transportation is {(transportation)}. Does this sound good? y/n")
 
+user_input = ""
 
 
+
+print(f"You will be traveling to {(destination)}, experiencing {(entertainment)}. Traveling via {(transportation)} and ending the night dining at {(restaurant)}.)
