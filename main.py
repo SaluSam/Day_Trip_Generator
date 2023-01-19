@@ -79,5 +79,4 @@ while user_input != "y":
 user_input = ""
 
 
-
-print(f"You will be traveling to {(destination)}, experiencing {(entertainment)}. Traveling via {(transportation)} and ending the night dining at {(restaurant)}.)
+print(f"You will be traveling to {(destination)}, experiencing {(entertainment)}. Traveling via {(transportation)} and ending the night dining at {(restaurant)}.")
